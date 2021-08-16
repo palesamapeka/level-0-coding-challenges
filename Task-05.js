@@ -1,7 +1,8 @@
 function areaOfTriangle(side1, side2, side3)
 {
         //Using the semiperimeter method
-        var area = 0.5 * (parseInt(side1) * parseInt(side2) * parseInt(side3));
-        return area;    
+        var semiperimeter = (parseInt(side1) + parseInt(side2) + parseInt(side3))/2;
+        var area = Math.sqrt(semiperimeter*(semiperimeter - side1) * (semiperimeter - side2)* (semiperimeter - side3));
+         return area.toFixed(2);   
 }
-console.log(areaOfTriangle(15, 5, 6));
+console.log(areaOfTriangle(4, 5, 6));

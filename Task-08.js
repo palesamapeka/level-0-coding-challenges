@@ -26,6 +26,19 @@ function convertToTime(inputNumber)
             {
                  console.log(hours + " hours and " + minutes + " minute");
             }
+        else if(hours === 0 && minutes > 1)
+           {
+                 console.log(minutes + " minutes") || console.log(minutes + " minute");
+           }
+        else if(hours > 1 && minutes === 0)
+        {
+                 console.log(hours + " hours") || console.log(hours + " hour");
+        }
+        else if(hours === 1 && minutes === 0)
+        {
+                 console.log(hours + " hour");
+        }
+    
         }
     }
-convertToTime(133);
+convertToTime(55);

@@ -18,4 +18,4 @@ function getCommonChar(word1, word2)
     }
     console.log("Common Letters: " + Array.from(charCount).join(", "));
 }
-getCommonChar("HOuse", "Mouse");
+getCommonChar("Car", "OuR");
