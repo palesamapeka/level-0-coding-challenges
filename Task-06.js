@@ -12,4 +12,4 @@ function maximum()
     console.log(max);
 }
 
-maximum(-10, -9, -8);
+maximum(-1, -2, 0);
