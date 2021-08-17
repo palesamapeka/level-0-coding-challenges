@@ -2,14 +2,23 @@ function maximum()
 {
     for(var x = 0; x <arguments.length; x++)
     {
-        var valuesArgs = Array.prototype.slice.call(arguments);
-        var max = valuesArgs[0];
-        if(arguments[x] >= max)
+        var inputArr = [];
+        var maxValue = 0;
+                
+        for(var x = 0; x < arguments.length; x++)
         {
-            max = arguments[x];
+            inputArr.push(arguments[x]);
+            maxValue = inputArr[0];
+
+            for(var i = 0; i < inputArr.length; i++)
+            {
+                if(inputArr[i] > maxValue)
+                {
+                maxValue = inputArr[i];
+                }
+            }
         }
     }
-    return max;
+    return maxValue;
 }
-
-console.log(maximum(-1, -2, 0));
+console.log(maximum(-10, -5, -9, -11, -56, 2222, -63, 87, 556, 2000, -59, 68));
