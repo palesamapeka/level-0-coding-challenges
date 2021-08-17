@@ -9,7 +9,7 @@ function maximum()
             max = arguments[x];
         }
     }
-    console.log(max);
+    return max;
 }
 
-maximum(-1, -2, 0);
+console.log(maximum(-1, -2, 0));
