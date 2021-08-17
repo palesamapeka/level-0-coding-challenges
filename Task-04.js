@@ -10,4 +10,4 @@ function evenOrOdd(inputInt)
     }
 }
 
-evenOrOdd("3");
+evenOrOdd(15);
