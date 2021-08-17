@@ -16,6 +16,12 @@ function getCommonChar(word1, word2)
             }
         }
     }
-    console.log("Common Letters: " + Array.from(charCount).join(", "));
+    var setOfCommon = new Set();
+    var uniqueLetters = charCount.split(", ").toString();
+    for(var q = 0; q < uniqueLetters.length; q++)
+    {
+        setOfCommon.add(uniqueLetters[q]);
+    }
+    console.log("Common Letters: " + Array.from(setOfCommon).join(", "));
 }
-getCommonChar("oUr", "OuR");
+getCommonChar("ssoUr", "ssOuR");
