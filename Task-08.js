@@ -40,4 +40,4 @@ function convertToTime(inputNumber)
             }
     }
 }
-convertToTime(26);
+convertToTime(55);
