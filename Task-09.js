@@ -1,12 +1,12 @@
-var vowelsArr = ['a', 'e', 'i', 'o', 'u'];
-var vowelsFound = "";
+const vowelsArr = ['a', 'e', 'i', 'o', 'u'];
+let vowelsFound = "";
 
 function getVowels(str)
 {
-    var userInput = str.toLowerCase();
-    for(var i = 0; i < userInput.length; i++)
+    let userInput = str.toLowerCase();
+    for(let i = 0; i < userInput.length; i++)
     {
-        for(var x = 0; x < vowelsArr.length; x++)
+        for(let x = 0; x < vowelsArr.length; x++)
         {
             if(userInput.charAt([i]) === vowelsArr[x])
             {
@@ -14,8 +14,8 @@ function getVowels(str)
             }
         }
     }
-    var setOfVowels = new Set();
-    var uniqueVowels = vowelsFound.split(", ").toString();
+    let setOfVowels = new Set();
+    let uniqueVowels = vowelsFound.split(", ").toString();
     for(var q = 0; q < uniqueVowels.length; q++)
     {
         setOfVowels.add(uniqueVowels[q]);

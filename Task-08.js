@@ -6,8 +6,8 @@ function convertToTime(inputNumber)
       }
     else 
     {
-        var hours = Math.floor((parseInt(inputNumber) / 60));
-        var minutes = Math.round((parseInt(inputNumber) % 60));
+        const hours = Math.floor((parseInt(inputNumber) / 60));
+        const minutes = Math.round((parseInt(inputNumber) % 60));
         
             if (hours > 1 && minutes > 1){
                     console.log(hours + " hours and " + minutes + " minutes." );

@@ -1,14 +1,14 @@
-var charCount = "";
+let charCount = "";
 
 function getCommonChar(word1, word2)
 {
-    var str1, str2;
+    let str1, str2;
     str1 = (word1.toLowerCase());
     str2 = (word2.toLowerCase());
 
-    for(var x = 0; x < str1.length; x++)
+    for(let x = 0; x < str1.length; x++)
     {
-        for(var i = 0; i <str2.length; i++)
+        for(let i = 0; i <str2.length; i++)
         {
             if((str1.charAt([x])) === (str2.charAt([i])))
             {
@@ -16,8 +16,8 @@ function getCommonChar(word1, word2)
             }
         }
     }
-    var setOfCommon = new Set();
-    var uniqueLetters = charCount.split(", ").toString();
+    let setOfCommon = new Set();
+    let uniqueLetters = charCount.split(", ").toString();
     for(var q = 0; q < uniqueLetters.length; q++)
     {
         setOfCommon.add(uniqueLetters[q]);

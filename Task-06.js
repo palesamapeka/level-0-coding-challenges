@@ -1,16 +1,16 @@
 function maximum()
 {
-    for(var x = 0; x <arguments.length; x++)
+    for(let x = 0; x <arguments.length; x++)
     {
         var inputArr = [];
         var maxValue = 0;
                 
-        for(var x = 0; x < arguments.length; x++)
+        for(let n = 0; n < arguments.length; n++)
         {
-            inputArr.push(arguments[x]);
+            inputArr.push(arguments[n]);
             maxValue = inputArr[0];
 
-            for(var i = 0; i < inputArr.length; i++)
+            for(let i = 0; i < inputArr.length; i++)
             {
                 if(inputArr[i] > maxValue)
                 {
