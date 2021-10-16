@@ -1,8 +1,8 @@
-const vowelsArr = ['a', 'e', 'i', 'o', 'u'];
-let vowelsFound = "";
-
 function getVowels(str)
 {
+    const vowelsArr = ['a', 'e', 'i', 'o', 'u'];
+    let vowelsFound = "";
+
     let userInput = str.toLowerCase();
     for(let i = 0; i < userInput.length; i++)
     {

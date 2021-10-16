@@ -1,7 +1,6 @@
-let charCount = "";
-
 function getCommonChar(word1, word2)
 {
+    let charCount = "";
     let str1, str2;
     str1 = (word1.toLowerCase());
     str2 = (word2.toLowerCase());

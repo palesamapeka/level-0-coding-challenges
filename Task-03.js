@@ -1,5 +1,5 @@
-function hello(stringIput)
+function hello(stringInput)
 {
-    console.log("Hello " + stringIput.toString() + "!");
+    console.log("Hello " + stringInput + "!");
 }
 hello("Palesa Mapeka");
