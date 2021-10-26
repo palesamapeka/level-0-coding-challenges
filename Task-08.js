@@ -11,21 +11,16 @@ function convertToTime(inputNumber)
         let hoursStr = "hour"; 
         let minuteStr = "minute";
 
+        if(hours == 0 || hours > 1)
+        {
+            hoursStr += "s";
+        }
         if(minutes == 0 || minutes > 1)
         { 
-            minuteStr += "s"
-        }
-         else if(hours == 0 || hours > 1)
-        {
-            hoursStr =+ "s";
-        }
-        else
-        {
-            minuteStr;
-            hoursStr;
+            minuteStr += "s";
         }
         console.log(hours, hoursStr + ",", minutes, minuteStr);
     }
 }
 
-convertToTime(60);
+convertToTime(45);
