@@ -8,36 +8,24 @@ function convertToTime(inputNumber)
     {
         const hours = Math.floor((parseInt(inputNumber) / 60));
         const minutes = Math.round((parseInt(inputNumber) % 60));
-        
-            if (hours > 1 && minutes > 1){
-                    console.log(hours + " hours and " + minutes + " minutes." );
-            }
+        let hoursStr = "hour"; 
+        let minuteStr = "minute";
 
-            else if (hours === 1 && minutes === 1){
-                    console.log(hours + " hour and " + minutes + " minute.");
-            }
-
-            else if (hours > 1 && minutes === 1){
-                    console.log(hours + " hours and " + minutes + " minute.");
-            }
-
-            else if (hours === 1 && minutes > 1){
-                    console.log(hours + " hour and " + minutes + " minutes.")
-            }
-
-            else if (hours === 1 && (minutes < 1 || minutes === 0)){
-                    console.log(hours + " hour.")
-            }
-
-            else if ((hours < 1 || hours === 0) && minutes === 1){
-                    console.log(minutes + " minute.")
-            }
-            else if (hours === 0 && minutes > 1){
-                    console.log(minutes + " minutes.");
-            }
-            else if (hours > 1 && minutes === 0){
-                    console.log(hours + " hours.");
-            }
+        if(minutes == 0 || minutes > 1)
+        { 
+            minuteStr += "s"
+        }
+         else if(hours == 0 || hours > 1)
+        {
+            hoursStr =+ "s";
+        }
+        else
+        {
+            minuteStr;
+            hoursStr;
+        }
+        console.log(hours, hoursStr + ",", minutes, minuteStr);
     }
 }
-convertToTime(55);
+
+convertToTime(60);
